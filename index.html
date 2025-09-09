@@ -7,8 +7,8 @@
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
-      background: #0f172a;
-      color: #fff;
+      background: #87cefa; 
+      color: #333;
       padding: 20px;
       text-align: center;
     }
@@ -17,23 +17,23 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      max-width: 1000px;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 12px;
+      max-width: 1600px;
       margin: 0 auto;
     }
     .gallery img {
       width: 100%;
-      height: 180px;
+      height: 140px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 6px;
       cursor: pointer;
       transition: transform 0.2s;
     }
     .gallery img:hover {
       transform: scale(1.05);
     }
-    /* モーダル */
+    
     .modal {
       display: none;
       position: fixed;
@@ -58,9 +58,12 @@
   <div class="gallery">
     <img src="https://d9rsildqfifhp5.archive.is/pXbsy/8b98a429b2f8d6a4444991cd3c9e69d45c0bb131.jpg" alt="画像1">
     <img src="https://d9rsildqfifhp5.archive.is/pXbsy/885d721c036dea2432f4ee3a04215a353b664e12.jpg" alt="画像2">
+    <img src="https://d9rsildqfifhp5.archive.is/pXbsy/76fb9e4dc5467768bbefd1952e1badf9762db521.jpg" alt="画像3">
+    <img src="https://d9rsildqfifhp5.archive.is/pXbsy/470d1f946050a612115a523f1b1e10d243a495cd.jpg" alt="画像4">
+    <img src="https://d9rsildqfifhp5.archive.is/pXbsy/640e0194aee8a02cd0792ba14a6fe630ebb35777.jpg" alt="画像5">
   </div>
 
-  <!-- モーダル -->
+
   <div id="modal" class="modal">
     <img id="modalImg" src="" alt="拡大画像">
   </div>
